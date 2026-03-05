@@ -12,7 +12,7 @@
 <#Student> a rdfs:Class ;
     rdfs:subClassOf <#Person> ;
     rdfs:label "Student"@en ;
-    rdfs:comment "An person enrolled in an educational program."@en .
+    rdfs:comment "A person enrolled in an educational program."@en .
 
 <#Topic> a rdfs:Class ;
     rdfs:label "Topic"@en ;
