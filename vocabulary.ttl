@@ -1,0 +1,63 @@
+@base <https://yourusername.github.io/your-repo/vocabulary.ttl> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+## --- Classes ---
+
+<#Person> a rdfs:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "An individual human being."@en .
+
+<#Student> a rdfs:Class ;
+    rdfs:subClassOf <#Person> ;
+    rdfs:label "Student"@en ;
+    rdfs:comment "An person enrolled in an educational program."@en .
+
+<#Topic> a rdfs:Class ;
+    rdfs:label "Topic"@en ;
+    rdfs:comment "A subject or field of interest."@en .
+
+## --- Properties ---
+
+<#name> a rdf:Property ;
+    rdfs:label "Name"@en ;
+    rdfs:comment "The full name of a person."@en ;
+    rdfs:domain <#Person> ;
+    rdfs:range xsd:string .
+
+<#emailAddress> a rdf:Property ;
+    rdfs:label "E-mailaddress"@en ;
+    rdfs:comment "An electronic mail address used for communication."@en ;
+    rdfs:domain <#Person> ;
+    rdfs:range xsd:string .
+
+<#phoneNumber> a rdf:Property ;
+    rdfs:label "Phone number"@en ;
+    rdfs:comment "A numerical sequence used to contact a person via telephone."@en ;
+    rdfs:domain <#Person> ;
+    rdfs:range xsd:string .
+
+<#studentID> a rdf:Property ;
+    rdfs:label "StudentID"@en ;
+    rdfs:comment "A unique identifier assigned to a student by an educational institution."@en ;
+    rdfs:domain <#Student> ;
+    rdfs:range xsd:string .
+
+<#yearOfStudy> a rdf:Property ;
+    rdfs:label "Year of Study"@en ;
+    rdfs:comment "The current academic year in which the student is enrolled."@en ;
+    rdfs:domain <#Student> ;
+    rdfs:range xsd:integer .
+
+<#interestedIn> a rdf:Property ;
+    rdfs:label "Interested in"@en ;
+    rdfs:comment "A topic or field that a person has an interest in."@en ;
+    rdfs:domain <#Person> ;
+    rdfs:range <#Topic> .
+
+<#knows> a rdf:Property ;
+    rdfs:label "knows"@en ;
+    rdfs:comment "A person known by this person, indicating some level of reciprocated interaction."@en ;
+    rdfs:domain <#Person> ;
+    rdfs:range <#Person> .
