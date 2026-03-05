@@ -1,6 +1,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dv: <https://driesver.github.io/ugent-knowledge-graphs/vocabulary.ttl#>.
-@prefix ex: <http://example.org/>.
+@prefix ex: <https://driesver.github.io/ugent-knowledge-graphs/data_lab2.ttl#>.
 
 ex:cloud a dv:Topic .
 ex:knowledge_graphs a dv:Topic .
