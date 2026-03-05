@@ -1,0 +1,23 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dv: <https://driesver.github.io/ugent-knowledge-graphs/vocabulary.ttl#>.
+@prefix ex: <http://example.org/>.
+
+ex:cloud a dv:Topic .
+ex:knowledge_graphs a dv:Topic .
+
+ex:me a dv:Student ;
+    dv:name "Dries Verhoeve"^^xsd:string;
+    dv:emailAddress <mailto:dries@ugent.be>;
+    dv:phoneNumber <tel:+32123456789>;
+    dv:studentID "02109999"^^xsd:string;
+    dv:yearOfStudy "5"^^xsd:integer;
+    dv:interestedIn ex:cloud,
+                    ex:knowledge_graphs;
+    dv:knows ex:olivier_de_meyst,
+             ex:xander_boudry.
+
+ex:olivier_de_meyst a dv:Student;
+    dv:name "Olivier De Meyst"^^xsd:string.
+
+ex:xander_boudry a dv:Person;
+    dv:name "Xander Boudry"^^xsd:string.
