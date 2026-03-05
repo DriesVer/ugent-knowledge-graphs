@@ -28,15 +28,15 @@
 
 <#emailAddress> a rdf:Property ;
     rdfs:label "E-mailaddress"@en ;
-    rdfs:comment "An electronic mail address used for communication."@en ;
+    rdfs:comment "An electronic mail address used for communication. Use this with an IRI formatted as <mailto:example@example.org>"@en ;
     rdfs:domain <#Person> ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Resource .
 
 <#phoneNumber> a rdf:Property ;
     rdfs:label "Phone number"@en ;
-    rdfs:comment "A numerical sequence used to contact a person via telephone."@en ;
+    rdfs:comment "A numerical sequence used to contact a person via telephone. Use this with an IRI formatted as <tel:+00123456789>"@en ;
     rdfs:domain <#Person> ;
-    rdfs:range xsd:string .
+    rdfs:range rdfs:Resource .
 
 <#studentID> a rdf:Property ;
     rdfs:label "StudentID"@en ;
