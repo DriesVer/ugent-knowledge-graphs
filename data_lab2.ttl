@@ -1,6 +1,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dv: <https://driesver.github.io/ugent-knowledge-graphs/vocabulary.ttl#>.
 @prefix ex: <https://driesver.github.io/ugent-knowledge-graphs/data_lab2.ttl#>.
+@prefix olivier: <https://raw.githubusercontent.com/olivierdm/itsme/refs/heads/main/profile.ttl#>.
 
 ex:cloud a dv:Topic .
 ex:knowledge_graphs a dv:Topic .
@@ -13,10 +14,10 @@ ex:me a dv:Student ;
     dv:yearOfStudy "5"^^xsd:integer;
     dv:interestedIn ex:cloud,
                     ex:knowledge_graphs;
-    dv:knows ex:olivier_de_meyst,
+    dv:knows olivier:me,
              ex:xander_boudry.
 
-ex:olivier_de_meyst a dv:Student;
+olivier:me a dv:Student;
     dv:name "Olivier De Meyst"^^xsd:string.
 
 ex:xander_boudry a dv:Person;
