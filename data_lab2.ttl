@@ -2,6 +2,7 @@
 @prefix dv: <https://driesver.github.io/ugent-knowledge-graphs/vocabulary.ttl#>.
 @prefix ex: <https://driesver.github.io/ugent-knowledge-graphs/data_lab2.ttl#>.
 @prefix olivier: <https://raw.githubusercontent.com/olivierdm/itsme/refs/heads/main/profile.ttl#>.
+@prefix francisco: <https://papichickens.github.io/vocab.ttl#>
 
 ex:cloud a dv:Topic .
 ex:knowledge_graphs a dv:Topic .
@@ -19,6 +20,9 @@ ex:me a dv:Student ;
 
 olivier:me a dv:Student;
     dv:name "Olivier De Meyst"^^xsd:string.
+
+francisco:me a dv:Student;
+    dv:name "Francisco Pimentel Alves"^^xsd:string.
 
 ex:xander_boudry a dv:Person;
     dv:name "Xander Boudry"^^xsd:string.
