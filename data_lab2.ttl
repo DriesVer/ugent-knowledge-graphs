@@ -16,6 +16,7 @@ ex:me a dv:Student ;
     dv:interestedIn ex:cloud,
                     ex:knowledge_graphs;
     dv:knows olivier:me,
+             francisco:me,
              ex:xander_boudry.
 
 olivier:me a dv:Student;
