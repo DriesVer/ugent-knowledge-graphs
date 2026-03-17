@@ -60,33 +60,29 @@ ex:marienbrucke a dv:Location;
 
 # --- Images ---
 
-ex:photo_dries a dv:Image ;
+<https://vtk.ugent.be/media/thumbs/external/praesides_photos/praesidiumfoto2425.jpg.420x594_q85_crop-smart_upscale.jpg> a dv:Image ;
     dv:title "Photo of Dries Verhoeve"^^xsd:string ;
     dv:author ex:fux;
     dv:depicts ex:me ; 
     dv:takenAt ex:ntgent ;
-    dv:description "Image of Dries Verhoeve, Praeses of VTK Gent in 2024-2025. The person is dressed in formal wear with a traditional student sash showing his function."^^xsd:string ;
-    dv:imageUrl <https://vtk.ugent.be/media/thumbs/external/praesides_photos/praesidiumfoto2425.jpg.420x594_q85_crop-smart_upscale.jpg> .
+    dv:description "Image of Dries Verhoeve, Praeses of VTK Gent in 2024-2025. The person is dressed in formal wear with a traditional student sash showing his function."^^xsd:string .
 
-ex:photo_pieter a dv:Image ;
+<https://pietercolpaert.be/img/pc.jpg>  a dv:Image ;
     dv:title "Headshot of Pieter Colpaert"^^xsd:string ;
     dv:author _:unknown_author ;
     dv:depicts ex:pieter_colpaert ; 
     dv:takenAt _:unknown_location ;
-    dv:description "Headshot of Pieter Colpaert that is used on his personal website."^^xsd:string ;
-    dv:imageUrl <https://pietercolpaert.be/img/pc.jpg> .
+    dv:description "Headshot of Pieter Colpaert that is used on his personal website."^^xsd:string .
 
-ex:photo_paraglide a dv:Image ;
+<https://driesver.github.io/ugent-knowledge-graphs/paraglide.jpg> a dv:Image ;
     dv:title "Paraglide"^^xsd:string ;
     dv:author ex:jan;
     dv:depicts ex:me ;
     dv:takenAt ex:landing_whale;
-    dv:description "A paraglider prepares for landing on a grassy, rocky slope, with a large white and orange wing fully inflated overhead. In the background, rugged mountains stretch beneath a heavy, overcast sky, while a second glider is visible in the distance."^^xsd:string ;
-    dv:imageUrl <https://driesver.github.io/ugent-knowledge-graphs/paraglide.jpg> .
+    dv:description "A paraglider prepares for landing on a grassy, rocky slope, with a large white and orange wing fully inflated overhead. In the background, rugged mountains stretch beneath a heavy, overcast sky, while a second glider is visible in the distance."^^xsd:string .
 
-ex:photo_neuschwanstein a dv:Image ;
+<https://driesver.github.io/ugent-knowledge-graphs/neuschwanstein.jpg> a dv:Image ;
     dv:title "Neuschwanstein Castle"^^xsd:string ;
     dv:author ex:me;
     dv:takenAt ex:marienbrucke ;
-    dv:description "Neuschwanstein Castle stands majestically atop a forested hill, its white limestone towers contrasting against a sprawling Bavarian valley and distant blue lakes. An orange paraglider drifts through the overcast sky in the upper right, adding a sense of scale to the vast, fairytale-like landscape."^^xsd:string ;
-    dv:imageUrl <https://driesver.github.io/ugent-knowledge-graphs/neuschwanstein.jpg>  .
+    dv:description "Neuschwanstein Castle stands majestically atop a forested hill, its white limestone towers contrasting against a sprawling Bavarian valley and distant blue lakes. An orange paraglider drifts through the overcast sky in the upper right, adding a sense of scale to the vast, fairytale-like landscape."^^xsd:string .
