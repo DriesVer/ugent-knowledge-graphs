@@ -18,6 +18,15 @@
     rdfs:label "Topic"@en ;
     rdfs:comment "A subject or field of interest."@en .
 
+<#Image> a rdfs:Class ;
+    rdfs:label "Image"@en ;
+    rdfs:label "Picture"@en ;
+    rdfs:comment "A digital representation of a picture made using a camera, in which an image is focused on to light-sensitive sensor and then stored digitally."@en .
+
+<#Location> a rdfs:Class ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "A specific geographic place."@en .
+
 ## --- Properties ---
 
 <#name> a rdf:Property ;
@@ -61,3 +70,51 @@
     rdfs:comment "A person known by this person, indicating some level of reciprocated interaction."@en ;
     rdfs:domain <#Person> ;
     rdfs:range <#Person> .
+
+<#title> a rdf:Property ;
+    rdfs:label "title"@en ;
+    rdfs:comment "The title of a thing."@en ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range xsd:string .
+
+<#author> a rdf:Property ;
+    rdfs:label "author"@en ;
+    rdfs:comment "The person who took the photo."@en ;
+    rdfs:domain <#Image> ;
+    rdfs:range <#Person> .
+
+<#depicts> a rdf:Property ;
+    rdfs:label "depicts"@en ;
+    rdfs:comment "Identifies a person shown in an image."@en ;
+    rdfs:domain <#Image> ;
+    rdfs:range <#Person> .
+
+<#takenAt> a rdf:Property ;
+    rdfs:label "taken at"@en ;
+    rdfs:comment "The location where the image was taken."@en ;
+    rdfs:domain <#Image> ;
+    rdfs:range <#Location> .
+
+<#description> a rdf:Property ;
+    rdfs:label "description"@en ;
+    rdfs:comment "A summary of the image's content."@en ;
+    rdfs:domain <#Image> ;
+    rdfs:range xsd:string .
+
+<#imageUrl> a rdf:Property ;
+    rdfs:label "image URL"@en ;
+    rdfs:comment "A URL pointing to the image."@en ;
+    rdfs:domain <#Image> ;
+    rdfs:range rdfs:Resource .
+
+<#latitude> a rdf:Property ;
+    rdfs:label "latitude"@en ;
+    rdfs:comment "The latitude of a location."@en ;
+    rdfs:domain <#Location> ;
+    rdfs:range xsd:decimal .
+
+<#longitude> a rdf:Property ;
+    rdfs:label "longitude"@en ;
+    rdfs:comment "The longitude of a location."@en ;
+    rdfs:domain <#Location> ;
+    rdfs:range xsd:decimal .
