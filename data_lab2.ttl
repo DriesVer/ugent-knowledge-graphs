@@ -84,5 +84,6 @@ ex:marienbrucke a dv:Location;
 <https://driesver.github.io/ugent-knowledge-graphs/neuschwanstein.jpg> a dv:Image ;
     dv:title "Neuschwanstein Castle"^^xsd:string ;
     dv:author ex:me;
+    dv:depicts _:unknown_paraglider ;
     dv:takenAt ex:marienbrucke ;
     dv:description "Neuschwanstein Castle stands majestically atop a forested hill, its white limestone towers contrasting against a sprawling Bavarian valley and distant blue lakes. An orange paraglider drifts through the overcast sky in the upper right, adding a sense of scale to the vast, fairytale-like landscape."^^xsd:string .
