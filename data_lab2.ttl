@@ -41,6 +41,9 @@ ex:pieter_colpaert a dv:Person;
 ex:jan a dv:Person;
     dv:name "Jan Jansens"^^xsd:string.
 
+_:unknown_paraglider a dv:Person ;
+    dv:name "Unknown paraglider"^^xsd:string .
+
 # --- Locations ---
 
 ex:ntgent a dv:Location;
